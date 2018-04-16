@@ -1,0 +1,8 @@
+<h1> your number of words are  </h1> {{count}}
+<h2>your text:</h2>
+{{fulltext}}
+<h1> words vs counting</h1>
+{%for word, counttotal in worddictionary%}
+{{word}}-{{counttotal}} </br>
+{% endfor %}
+<a href='{% url 'about' %}'>about</a>
